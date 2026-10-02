@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="color-scheme" content="dark light">
+
+<title>Landing Page para Restaurante | Sabor que redefine o jogo</title>
+<meta name="description" content="Landing page conceitual de uma hamburgueria: ingredientes selecionados, carne preparada na hora, cardápio interativo e carrinho funcional. Projeto de portfólio front-end.">
+<meta name="author" content="Projeto conceitual de demonstração">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="canonical" href="https://seu-usuario.github.io/restaurant-landing-page/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Landing Page para Restaurante">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Sabor que redefine o jogo | Landing page para restaurante">
+<meta property="og:description" content="Landing page conceitual de hamburgueria: cardápio interativo, carrinho funcional e design responsivo. Projeto de portfólio front-end.">
+<meta property="og:url" content="https://seu-usuario.github.io/restaurant-landing-page/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=70">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hambúrguer artesanal iluminado sobre fundo escuro.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sabor que redefine o jogo | Landing page para restaurante">
+<meta name="twitter:description" content="Landing page conceitual de hamburgueria: cardápio interativo, carrinho funcional e design responsivo. Projeto de portfólio front-end.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=70">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a0a'/%3E%3Cg fill='none' stroke='%23ff5a1f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8.5 4v6M12 4v6M15.5 4v6M12 10v18'/%3E%3Cpath d='M23 4c-2.2 1.9-3.2 4.5-3.2 7.5 0 2 1.2 3.1 3.2 3.1V28'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a0a'/%3E%3Cg fill='none' stroke='%23ff5a1f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8.5 4v6M12 4v6M15.5 4v6M12 10v18'/%3E%3Cpath d='M23 4c-2.2 1.9-3.2 4.5-3.2 7.5 0 2 1.2 3.1 3.2 3.1V28'/%3E%3C/g%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Sora:wght@600;700;800&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+
+<script>
+  document.documentElement.classList.add('js');
+  window.__revealFailsafe = window.setTimeout(function () {
+    document.documentElement.classList.add('reveal-all');
+  }, 3000);
+</script>
+
+<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&amp;fit=crop&amp;w=1200&amp;h=960&amp;q=72">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Restaurante (conceito sem marca)",
+  "description": "Landing page conceitual de hambúrgueria criada para demonstrar um projeto de portfólio front-end. Produtos, preços, horários e dados comerciais são fictícios.",
+  "servesCuisine": "Hambúrgueres",
+  "priceRange": "R$$",
+  "url": "https://seu-usuario.github.io/restaurant-landing-page/",
+  "image": "https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=1200&h=630&q=70",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua das Palmeiras, 420 — conjunto 12",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "postalCode": "05435-000",
+    "addressCountry": "BR"
+  },
+  "telephone": "+55 11 4002-8922",
+  "email": "contato@exemplo.com",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "18:00",
+      "closes": "23:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Sunday"],
+      "opens": "12:00",
+      "closes": "22:00"
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+<!-- ============================== CABEÇALHO / NAVEGAÇÃO ============================== -->
+<header class="site-header" id="site-header">
+  <div class="container site-header__inner">
+    <nav class="site-nav" id="primary-nav" aria-label="Navegação principal">
+      <ul class="site-nav__list" id="nav-list">
+        <li><a class="site-nav__link" href="#inicio" data-nav-link>Início</a></li>
+        <li><a class="site-nav__link" href="#cardapio" data-nav-link>Cardápio</a></li>
+        <li><a class="site-nav__link" href="#sobre" data-nav-link>Sobre</a></li>
+        <li><a class="site-nav__link" href="#contato" data-nav-link>Contato</a></li>
+      </ul>
+
+      <div class="site-nav__mobile-actions">
+        <a class="btn btn--primary" href="#cardapio">Faça seu pedido</a>
+        <button class="btn btn--ghost" type="button" id="nav-open-cart">
+          Ver meu pedido
+          <span class="cart-button__count" data-count="0" aria-hidden="true">0</span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="site-header__actions">
+      <button class="cart-button" type="button" id="cart-open" aria-haspopup="dialog" aria-controls="cart-drawer">
+        <svg class="cart-button__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M6 6h15l-1.5 9h-12z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M6 6 5 3H2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="9" cy="20" r="1.6" fill="currentColor"/>
+          <circle cx="18" cy="20" r="1.6" fill="currentColor"/>
+        </svg>
+        <span class="cart-button__label">Pedido</span>
+        <span class="cart-button__count" id="cart-count" data-count="0" aria-hidden="true">0</span>
+        <span class="visually-hidden" id="cart-count-sr" role="status">Nenhum item no pedido</span>
+      </button>
+
+      <a class="btn btn--primary btn--sm site-header__cta" href="#cardapio">Faça seu pedido</a>
+
+      <button class="nav-toggle" type="button" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="visually-hidden">Abrir menu de navegação</span>
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+  <div class="site-header__progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+</header>
+<div class="nav-scrim" id="nav-scrim" hidden></div>
+
+<main id="conteudo">
+
+  <!-- ============================== HERO ============================== -->
+  <section class="hero" id="inicio" aria-labelledby="hero-title">
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow reveal">
+          <span class="eyebrow__dot" aria-hidden="true"></span>
+          Hamburgueria · São Paulo
+        </p>
+
+        <h1 class="hero__title reveal" id="hero-title">
+          Sabor que<br>
+          <span class="text-accent">redefine</span> o jogo.
+        </h1>
+
+        <p class="hero__lead reveal">
+          Carne madurada no ponto, ingredientes que você consegue nomear e um pão
+          com vergonha de ser grande. Cada lanche é montado na hora, sem atalho —
+          é por isso que o cardápio enche a casa toda noite.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary btn--lg" href="#cardapio">Explorar cardápio</a>
+          <a class="btn btn--ghost btn--lg" href="#sobre">Como funciona</a>
+        </div>
+
+        <ul class="hero__stats reveal">
+          <li class="hero__stat">
+            <span class="hero__stat-value" data-count-to="12">12</span>
+            <span class="hero__stat-label">meses refinando<br>uma única receita</span>
+          </li>
+          <li class="hero__stat">
+            <span class="hero__stat-value" data-count-to="100" data-suffix="%">100%</span>
+            <span class="hero__stat-label">carne moída<br>na casa toda semana</span>
+          </li>
+          <li class="hero__stat">
+            <span class="hero__stat-value" data-count-to="0" data-suffix=" min">0 min</span>
+            <span class="hero__stat-label">entre o balcão<br>e a sua mesa</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__figure reveal">
+        <div class="hero__media">
+          <img
+            id="hero-image"
+            src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&amp;fit=crop&amp;w=1200&amp;h=960&amp;q=72"
+            srcset="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&amp;fit=crop&amp;w=640&amp;h=560&amp;q=70 640w, https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&amp;fit=crop&amp;w=960&amp;h=840&amp;q=72 960w, https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&amp;fit=crop&amp;w=1400&amp;h=1200&amp;q=75 1400w"
+            sizes="(max-width: 900px) 92vw, 46vw"
+            width="1200"
+            height="960"
+            alt="Hambúrguer artesanal com queijo derretido, alface e pão brioche, iluminado sobre fundo escuro."
+            fetchpriority="high"
+            decoding="async">
+        </div>
+        <span class="hero__ring" aria-hidden="true"></span>
+        <span class="hero__rule" aria-hidden="true"></span>
+        <p class="hero__caption">
+          <span class="hero__caption-tag">Foco da semana</span>
+          Duplo da Casa · blend 220 g, suíço, picles e molho da casa
+        </p>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#cardapio">
+      <span class="hero__scroll-line" aria-hidden="true"></span>
+      Role para ver o cardápio
+    </a>
+  </section>
+
+  <!-- ============================== CARDÁPIO ============================== -->
+  <section class="section menu" id="cardapio" aria-labelledby="menu-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow reveal"><span class="eyebrow__dot" aria-hidden="true"></span>Cardápio</p>
+        <h2 class="section-title reveal" id="menu-title">Escolha o seu <span class="text-accent">próximo</span> favorito.</h2>
+        <p class="section-lead reveal">
+          Onze criações, cinco categorias e zero cardápio de foto antiga. Todos os
+          itens abaixo são fictícios e servem como demonstração de interface.
+        </p>
+      </header>
+
+      <div class="menu__toolbar reveal">
+        <div class="filters" role="group" aria-label="Filtrar cardápio por categoria" id="menu-filters">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Todos <span class="filter__count">11</span></button>
+          <button class="filter" type="button" data-filter="hamburgueres" aria-pressed="false">Hambúrgueres <span class="filter__count">5</span></button>
+          <button class="filter" type="button" data-filter="acompanhamentos" aria-pressed="false">Acompanhamentos <span class="filter__count">2</span></button>
+          <button class="filter" type="button" data-filter="combos" aria-pressed="false">Combos <span class="filter__count">1</span></button>
+          <button class="filter" type="button" data-filter="bebidas" aria-pressed="false">Bebidas <span class="filter__count">3</span></button>
+        </div>
+
+        <p class="menu__result" role="status" id="filter-status">Exibindo 11 de 11 itens</p>
+      </div>
+
+      <ul class="menu__grid" id="menu-grid">
+
+        <li class="menu__item reveal" data-category="hamburgueres">
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=70"
+                srcset="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=480&amp;h=360&amp;q=68 480w, https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=72 800w"
+                sizes="(max-width: 600px) 88vw, (max-width: 1000px) 44vw, 30vw"
+                width="640" height="480"
+                alt="Hambúrguer Clássico da Casa com pão brioche, cheddar, alface e tomate sobre tábua escura."
+                loading="lazy" decoding="async">
+              <span class="badge badge--ghost">Assinatura</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Clássico da Casa</h3>
+              <p class="card__desc">Blend 150 g grelhado na chapa, cheddar curado, alface crocante, tomate e maionese da casa no brioche.</p>
+              <div class="card__foot">
+                <p class="card__price"><span class="card__price-label">R$</span> 34,90</p>
+                <button class="btn btn--primary btn--sm" type="button" data-add data-name="Clássico da Casa" data-price="34.90">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="menu__item reveal" data-category="hamburgueres">
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=70"
+                srcset="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&amp;fit=crop&amp;w=480&amp;h=360&amp;q=68 480w, https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=72 800w"
+                sizes="(max-width: 600px) 88vw, (max-width: 1000px) 44vw, 30vw"
+                width="640" height="480"
+                alt="Smash Bacon: dois smashes com bacon crocante, rúcula e molho rosso sobre fundo preto."
+                loading="lazy" decoding="async">
+              <span class="badge badge--hot">Mais pedido</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Smash Bacon</h3>
+              <p class="card__desc">Dois smashes de 90 g com borda crocante, cheddar derretido, bacon defumado, cebola caramelizada e maionese de páprica.</p>
+              <div class="card__foot">
+                <p class="card__price"><span class="card__price-label">R$</span> 39,90</p>
+                <button class="btn btn--primary btn--sm" type="button" data-add data-name="Smash Bacon" data-price="39.90">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="menu__item reveal" data-category="hamburgueres">
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=70"
+                srcset="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&amp;fit=crop&amp;w=480&amp;h=360&amp;q=68 480w, https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=72 800w"
+                sizes="(max-width: 600px) 88vw, (max-width: 1000px) 44vw, 30vw"
+                width="640" height="480"
+                alt="Dois hambúrgueres do Duplo da Casa sobre tábua de madeira, com garrafas ao fundo."
+                loading="lazy" decoding="async">
+              <span class="badge badge--new">Novidade</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Duplo da Casa</h3>
+              <p class="card__desc">Blend 220 g no ponto exato, queijo suíço, cebola em threads, picles e o molho da casa.</p>
+              <div class="card__foot">
+                <p class="card__price"><span class="card__price-label">R$</span> 46,90</p>
+                <button class="btn btn--primary btn--sm" type="button" data-add data-name="Duplo da Casa" data-price="46.90">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="menu__item reveal" data-category="hamburgueres">
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=70"
+                srcset="https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&amp;fit=crop&amp;w=480&amp;h=360&amp;q=68 480w, https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=72 800w"
+                sizes="(max-width: 600px) 88vw, (max-width: 1000px) 44vw, 30vw"
+                width="640" height="480"
+                alt="Crispy Chicken: frango empanado crocante e dourado com pele rusty."
+                loading="lazy" decoding="async">
+              <span class="badge badge--new">Novidade</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Crispy Chicken</h3>
+              <p class="card__desc">Frango empanado 24 h antes, maionese de limão, alface shiso e molho de mel com mostarda dijon.</p>
+              <div class="card__foot">
+                <p class="card__price"><span class="card__price-label">R$</span> 37,90</p>
+                <button class="btn btn--primary btn--sm" type="button" data-add data-name="Crispy Chicken" data-price="37.90">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="menu__item reveal" data-category="hamburgueres">
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=70"
+                srcset="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&amp;fit=crop&amp;w=480&amp;h=360&amp;q=68 480w, https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=72 800w"
+                sizes="(max-width: 600px) 88vw, (max-width: 1000px) 44vw, 30vw"
+                width="640" height="480"
+                alt="Truffle Brie: hambúrguer com queijo derretido e rúcula sobre tábua escura."
+                loading="lazy" decoding="async">
+              <span class="badge badge--ghost">Chef's choice</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Truffle &amp; Brie</h3>
+              <p class="card__desc">Blend 180 g, brie derretido, graisse de trufa negra, rúcula selvagem e maionese de ervas.</p>
+              <div class="card__foot">
+                <p class="card__price"><span class="card__price-label">R$</span> 52,90</p>
+                <button class="btn btn--primary btn--sm" type="button" data-add data-name="Truffle &amp; Brie" data-price="52.90">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="menu__item reveal" data-category="acompanhamentos">
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=70"
+                srcset="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&amp;fit=crop&amp;w=480&amp;h=360&amp;q=68 480w, https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=72 800w"
+                sizes="(max-width: 600px) 88vw, (max-width: 1000px) 44vw, 30vw"
+                width="640" height="480"
+                alt="Batata rústica servida em copo metálico com alecrim, sobre fundo preto."
+                loading="lazy" decoding="async">
+              <span class="badge badge--ghost">Sem glúten de verdade</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Batata Rústica</h3>
+              <p class="card__desc">Batata rústica fatiada à mão, crocante por fora, finalizada com alecrim, sal marinho e maionese da casa.</p>
+              <div class="card__foot">
+                <p class="card__price"><span class="card__price-label">R$</span> 24,90</p>
+                <button class="btn btn--primary btn--sm" type="button" data-add data-name="Batata Rústica" data-price="24.90">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="menu__item reveal" data-category="acompanhamentos">
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=70"
+                srcset="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&amp;fit=crop&amp;w=480&amp;h=360&amp;q=68 480w, https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=72 800w"
+                sizes="(max-width: 600px) 88vw, (max-width: 1000px) 44vw, 30vw"
+                width="640" height="480"
+                alt="Batata crocante em cesto de arame, coberta de queijo e páprica."
+                loading="lazy" decoding="async">
+              <span class="badge badge--hot">Mais pedido</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Batata Crocante</h3>
+              <p class="card__desc">Batata frita sequinha, twice-fried, com páprica defumada, alho confitado e queijo em pó envelhecido.</p>
+              <div class="card__foot">
+                <p class="card__price"><span class="card__price-label">R$</span> 19,90</p>
+                <button class="btn btn--primary btn--sm" type="button" data-add data-name="Batata Crocante" data-price="19.90">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="menu__item reveal" data-category="combos">
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1512152272829-e3139592d56f?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=70"
+                srcset="https://images.unsplash.com/photo-1512152272829-e3139592d56f?auto=format&amp;fit=crop&amp;w=480&amp;h=360&amp;q=68 480w, https://images.unsplash.com/photo-1512152272829-e3139592d56f?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=72 800w"
+                sizes="(max-width: 600px) 88vw, (max-width: 1000px) 44vw, 30vw"
+                width="640" height="480"
+                alt="Combo Dupla: hambúrgueres com batata frita, tomate e azeitona em tábua de madeira."
+                loading="lazy" decoding="async">
+              <span class="badge badge--new">Combo</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Combo Dupla</h3>
+              <p class="card__desc">Dois Smash Bacon, batata rústica grande e squeeze de laranja de 400 ml. Economia de R$ 12,90.</p>
+              <div class="card__foot">
+                <p class="card__price"><span class="card__price-label">R$</span> 54,90</p>
+                <button class="btn btn--primary btn--sm" type="button" data-add data-name="Combo Dupla" data-price="54.90">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="menu__item reveal" data-category="bebidas">
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=70"
+                srcset="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&amp;fit=crop&amp;w=480&amp;h=360&amp;q=68 480w, https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=72 800w"
+                sizes="(max-width: 600px) 88vw, (max-width: 1000px) 44vw, 30vw"
+                width="640" height="480"
+                alt="Squeeze de laranja servido em copo alto, com rodela de laranja e fundo escuro."
+                loading="lazy" decoding="async">
+              <span class="badge badge--ghost">Prensado na hora</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Squeeze de Laranja</h3>
+              <p class="card__desc">Laranja pera prensada na hora, 400 ml, sem açúcar adicionado e com a polpa no fundo do copo.</p>
+              <div class="card__foot">
+                <p class="card__price"><span class="card__price-label">R$</span> 16,90</p>
+                <button class="btn btn--primary btn--sm" type="button" data-add data-name="Squeeze de Laranja" data-price="16.90">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="menu__item reveal" data-category="bebidas">
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=70"
+                srcset="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&amp;fit=crop&amp;w=480&amp;h=360&amp;q=68 480w, https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=72 800w"
+                sizes="(max-width: 600px) 88vw, (max-width: 1000px) 44vw, 30vw"
+                width="640" height="480"
+                alt="Laranja Premium Mocktail em copo alto com rodelas de limão, sobre fundo escuro."
+                loading="lazy" decoding="async">
+              <span class="badge badge--new">Sem álcool</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Laranja Premium Mocktail</h3>
+              <p class="card__desc">Squeeze de laranja, gengibre fresco, hortelã batida, tônica premium e zero álcool.</p>
+              <div class="card__foot">
+                <p class="card__price"><span class="card__price-label">R$</span> 19,90</p>
+                <button class="btn btn--primary btn--sm" type="button" data-add data-name="Laranja Premium Mocktail" data-price="19.90">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="menu__item reveal" data-category="bebidas">
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=70"
+                srcset="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&amp;fit=crop&amp;w=480&amp;h=360&amp;q=68 480w, https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=72 800w"
+                sizes="(max-width: 600px) 88vw, (max-width: 1000px) 44vw, 30vw"
+                width="640" height="480"
+                alt="Cold Brew Torra sendo servido sobre gelo em copo alto, com luz de fundo."
+                loading="lazy" decoding="async">
+              <span class="badge badge--ghost">Extração 18 h</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Cold Brew Torra</h3>
+              <p class="card__desc">Café extraído a frio por 18 horas, servido com gelo, casca de laranja e um toque de tonka.</p>
+              <div class="card__foot">
+                <p class="card__price"><span class="card__price-label">R$</span> 17,90</p>
+                <button class="btn btn--primary btn--sm" type="button" data-add data-name="Cold Brew Torra" data-price="17.90">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+      </ul>
+
+      <p class="menu__empty" id="menu-empty" hidden>
+        Nenhum item nesta categoria por enquanto. <a href="#contato">Fale com a gente</a> para saber o que entra na próxima leva.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================== EXPERIÊNCIA / SOBRE ============================== -->
+  <section class="section experience" id="sobre" aria-labelledby="about-title">
+    <div class="container experience__inner">
+      <div class="experience__media reveal">
+        <img
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=70"
+          srcset="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=640&amp;h=720&amp;q=70 640w, https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1100&amp;h=825&amp;q=74 1100w"
+          sizes="(max-width: 900px) 90vw, 48vw"
+          width="960" height="720"
+          alt="Mesa de restaurante com iluminação baixa, taças e pratos prontos para o serviço."
+          loading="lazy" decoding="async">
+        <div class="experience__media-badge" aria-hidden="true">
+          <span class="experience__media-badge-value">2019</span>
+          <span class="experience__media-badge-label">desde</span>
+        </div>
+      </div>
+
+      <div class="experience__content">
+        <p class="eyebrow reveal"><span class="eyebrow__dot" aria-hidden="true"></span>A experiência</p>
+        <h2 class="section-title reveal" id="about-title">
+          Não é só um hambúrguer.<br><span class="text-accent">É experiência.</span>
+        </h2>
+        <p class="section-lead reveal">
+          A cozinha funciona como uma cozinha de restaurante: tudo é
+          misurado, pesado e registrado antes do serviço. O que muda no lanche é
+          apenas o tempo de espera — e ele é curto de propósito.
+        </p>
+
+        <ol class="experience__list">
+          <li class="experience__item reveal">
+            <span class="experience__index" aria-hidden="true">01</span>
+            <div>
+              <h3>Ingredientes selecionados</h3>
+              <p>Carne de gado Hereford moída toda semana, pães fornecidos por padaria parceira e legumes frescos comprados na feira duas vezes por semana.</p>
+            </div>
+          </li>
+          <li class="experience__item reveal">
+            <span class="experience__index" aria-hidden="true">02</span>
+            <div>
+              <h3>Carne preparada na hora</h3>
+              <p>Nada pré-montado. O blend é formado no pedido, moldado na hora e grelhado conforme o ponto que você escolher.</p>
+            </div>
+          </li>
+          <li class="experience__item reveal">
+            <span class="experience__index" aria-hidden="true">03</span>
+            <div>
+              <h3>Combinações exclusivas</h3>
+              <p>Onze receitas proprietárias, criadas para não se repetir em nenhum outro lugar da cidade.</p>
+            </div>
+          </li>
+          <li class="experience__item reveal">
+            <span class="experience__index" aria-hidden="true">04</span>
+            <div>
+              <h3>Atenção aos detalhes</h3>
+              <p>Da temperatura do prato de saída ao tempo do pedido: a operação é medida para que a entrega chegue quente.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== DIFERENCIAIS ============================== -->
+  <section class="section features" id="diferenciais" aria-labelledby="features-title">
+    <div class="container">
+      <header class="section-head section-head--center">
+        <p class="eyebrow reveal"><span class="eyebrow__dot" aria-hidden="true"></span>O que faz a diferença</p>
+        <h2 class="section-title reveal" id="features-title">Quatro compromissos que não negociamos.</h2>
+      </header>
+
+      <ul class="features__grid">
+        <li class="feature reveal">
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false"><path d="M16 4c3 3.2 4.6 6.3 4.6 9.4A4.6 4.6 0 0 1 16 18a4.6 4.6 0 0 1-4.6-4.6C11.4 10.3 13 7.2 16 4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M16 18v10M11 23.5 16 28l5-4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="feature__title">Ingredientes selecionados</h3>
+          <p class="feature__text">Lista curta e rastreável. Se não conseguimos dizer de onde veio, não entra na chapa.</p>
+        </li>
+
+        <li class="feature reveal">
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false"><path d="M7 19a9 9 0 0 1 18 0Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M5.5 19h21a2.5 2.5 0 0 1-2.5 2.5H8A2.5 2.5 0 0 1 5.5 19Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M13 8.5V6M19 8.5V6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </span>
+          <h3 class="feature__title">Preparação artesanal</h3>
+          <p class="feature__text">Smash na chapa, montagem à mão e um único lote de molho por dia. Sem atalho industrial.</p>
+        </li>
+
+        <li class="feature reveal">
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false"><path d="M16 5.5 20 12l7 .8-5.2 4.9 1.4 7-6.2-3.5L10.8 25l1.4-7L7 12.8 14 12Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="feature__title">Combinações exclusivas</h3>
+          <p class="feature__text">Receitas desenvolvidas exclusivamente para a casa — testadas até a crosta ficar no ponto exato.</p>
+        </li>
+
+        <li class="feature reveal">
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false"><path d="M14.5 4.5c.9 5.1 3.4 8 8.5 8.9-5.1.9-7.6 3.8-8.5 8.9-.9-5.1-3.4-8-8.5-8.9 5.1-.9 7.6-3.8 8.5-8.9Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M24 19.5c.4 2.4 1.6 3.7 4 4.2-2.4.4-3.6 1.7-4 4.2-.4-2.5-1.6-3.8-4-4.2 2.4-.5 3.6-1.8 4-4.2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="feature__title">Experiência premium</h3>
+          <p class="feature__text">Balcão rápido, embalagem térmica e embalagem que aguenta o trajeto sem virar encharcada.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================== DEPOIMENTOS ============================== -->
+  <section class="section testimonials" id="depoimentos" aria-labelledby="testimonials-title">
+    <div class="container">
+      <header class="section-head section-head--center">
+        <p class="eyebrow reveal"><span class="eyebrow__dot" aria-hidden="true"></span>Avaliações</p>
+        <h2 class="section-title reveal" id="testimonials-title">O que dizem por aí.</h2>
+        <p class="section-lead reveal">
+          <strong class="disclaimer-inline">Depoimentos fictícios.</strong>
+          Todas as notas, nomes e relatos abaixo foram criados apenas para demonstrar
+          o layout desta interface — não representam pessoas reais.
+        </p>
+      </header>
+
+      <ul class="testimonials__grid">
+        <li class="testimonial reveal">
+          <div class="testimonial__stars" role="img" aria-label="Nota 5 de 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <blockquote class="testimonial__quote">
+            <p>“O smash chega crocante nas bordas e o pão não desmonta. É o primeiro pedido que eu repito no mesmo dia.”</p>
+          </blockquote>
+          <p class="testimonial__author"><span class="testimonial__name">Renata Alencar</span><span class="testimonial__role">Cliente fictícia</span></p>
+        </li>
+
+        <li class="testimonial reveal">
+          <div class="testimonial__stars" role="img" aria-label="Nota 5 de 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <blockquote class="testimonial__quote">
+            <p>“Peço o Duplo da Casa com batata rústica há meses. O molho mudou uma vez e me avisaram por msg.”</p>
+          </blockquote>
+          <p class="testimonial__author"><span class="testimonial__name">Caio Bertoldo</span><span class="testimonial__role">Cliente fictício</span></p>
+        </li>
+
+        <li class="testimonial reveal">
+          <div class="testimonial__stars" role="img" aria-label="Nota 4 de 5">
+            <span aria-hidden="true">★★★★<em>★</em></span>
+          </div>
+          <blockquote class="testimonial__quote">
+            <p>“O espaço é pequeno e barulhento, e ainda assim é o melhor lugar para comer algo rápido na cidade.”</p>
+          </blockquote>
+          <p class="testimonial__author"><span class="testimonial__name">Helena Marques</span><span class="testimonial__role">Cliente fictícia</span></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================== CHAMADA PARA AÇÃO ============================== -->
+  <section class="section cta" aria-labelledby="cta-title">
+    <div class="container cta__inner">
+      <div class="cta__content">
+        <p class="eyebrow reveal"><span class="eyebrow__dot" aria-hidden="true"></span>Bora comer</p>
+        <h2 class="cta__title reveal" id="cta-title">
+          Seu próximo favorito<br><span class="text-accent">está aqui.</span>
+        </h2>
+        <p class="section-lead reveal">
+          Monte o pedido no cardápio, ajuste as quantidades e veja o total
+          atualizar na hora. Tudo funciona no navegador — nenhuma cobrança é feita.
+        </p>
+        <div class="cta__actions reveal">
+          <a class="btn btn--primary btn--lg" href="#cardapio">Explorar cardápio</a>
+          <a class="btn btn--ghost btn--lg" href="#contato">Falar com a casa</a>
+        </div>
+      </div>
+
+      <div class="cta__media reveal">
+        <img
+          src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&amp;fit=crop&amp;w=700&amp;h=880&amp;q=70"
+          srcset="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&amp;fit=crop&amp;w=520&amp;h=660&amp;q=70 520w, https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&amp;fit=crop&amp;w=900&amp;h=1120&amp;q=74 900w"
+          sizes="(max-width: 900px) 90vw, 40vw"
+          width="700" height="880"
+          alt="Sobremesa da casa com caramelo escorrido sobre fundo preto."
+          loading="lazy" decoding="async">
+        <span class="cta__badge" aria-hidden="true">4,9 <small>/ 5</small></span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================== RODAPÉ ============================== -->
+<footer class="site-footer" id="contato">
+  <div class="container">
+    <div class="site-footer__grid">
+
+      <div class="site-footer__col site-footer__col--brand">
+        <h2 class="site-footer__title site-footer__title--lead">Sobre o projeto</h2>
+        <p class="site-footer__about">
+          Hamburgueria de bairro, com cozinha de ingredientista, montagem na hora
+          e entrega rápida. Conceito sem marca, criado como estudo de caso de
+          interface e desenvolvimento front-end.
+        </p>
+        <ul class="site-footer__list site-footer__list--inline" aria-label="Diferenciais do serviço">
+          <li>Montagem na hora</li>
+          <li>Entrega rápida</li>
+          <li>Sem glúten</li>
+        </ul>
+      </div>
+
+      <nav class="site-footer__col" aria-label="Navegação do rodapé">
+        <h2 class="site-footer__title">Navegação</h2>
+        <ul class="site-footer__list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#depoimentos">Avaliações</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Horários</h2>
+        <p class="site-footer__note">Horários fictícios, apenas para demonstração.</p>
+        <dl class="hours">
+          <div class="hours__row"><dt>Ter — Qui</dt><dd>18h — 23h30</dd></div>
+          <div class="hours__row"><dt>Sex — Sáb</dt><dd>18h — 00h</dd></div>
+          <div class="hours__row"><dt>Domingo</dt><dd>12h — 22h</dd></div>
+          <div class="hours__row"><dt>Seg — Ter</dt><dd>Fechado</dd></div>
+        </dl>
+      </div>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Contato</h2>
+        <address class="site-footer__address">
+          Rua das Palmeiras, 420 — conjunto 12<br>
+          Vila Madalena · São Paulo — SP<br>
+          CEP 05435-000
+        </address>
+        <ul class="site-footer__list">
+          <li><a href="tel:+551140028922">(11) 4002-8922</a></li>
+          <li><a href="mailto:contato@exemplo.com">contato@exemplo.com</a></li>
+        </ul>
+        <p class="site-footer__note">Endereço, telefone e e-mail fictícios.</p>
+      </div>
+
+    </div>
+
+    <form class="footer-signup" id="footer-signup" novalidate>
+      <div class="footer-signup__text">
+        <h2 class="footer-signup__title">Receba o cardápio da semana</h2>
+        <p class="footer-signup__desc">Formulário demonstrativo. Nenhum dado é enviado, salvo ou compartilhado.</p>
+      </div>
+      <div class="footer-signup__field">
+        <label class="visually-hidden" for="signup-email">Seu melhor e-mail</label>
+        <input class="field__input" type="email" id="signup-email" name="email" placeholder="voce@email.com" autocomplete="email" required aria-describedby="signup-error">
+        <button class="btn btn--primary" type="submit">Quero receber</button>
+      </div>
+      <p class="field__error" id="signup-error" role="alert" hidden></p>
+    </form>
+
+    <div class="site-footer__bottom">
+      <p class="site-footer__disclaimer">
+        <strong>Aviso:</strong> este é um projeto conceitual, sem marca e sem
+        vínculo com qualquer estabelecimento real. Produtos, preços, avaliações,
+        horários, endereço e dados comerciais foram criados exclusivamente para
+        demonstrar o trabalho de design e desenvolvimento. Nenhuma compra ou
+        pagamento é processado.
+      </p>
+      <p class="site-footer__copy">
+        © <span id="current-year">2026</span> · Projeto conceitual de portfólio ·
+        <span>Imagens: Unsplash (licença livre para uso comercial)</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================== CARRINHO (DIALOG) ============================== -->
+<div class="overlay" id="cart-overlay" hidden></div>
+
+<aside class="drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+  <div class="drawer__header">
+    <div>
+      <p class="drawer__eyebrow">Demonstração</p>
+      <h2 class="drawer__title" id="cart-title">Seu pedido</h2>
+    </div>
+    <button class="icon-btn" type="button" id="cart-close" aria-label="Fechar pedido">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div class="drawer__steps" role="group" aria-label="Etapas do pedido">
+    <span class="drawer__step is-active" data-step-indicator="cart">1. Itens</span>
+    <span class="drawer__step" data-step-indicator="checkout">2. Dados</span>
+    <span class="drawer__step" data-step-indicator="done">3. Confirmação</span>
+  </div>
+
+  <div class="drawer__body" id="drawer-body">
+
+    <!-- ETAPA 1: ITENS -->
+    <div class="drawer__panel is-active" data-panel="cart">
+      <div class="cart-empty" id="cart-empty">
+        <span class="cart-empty__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" focusable="false"><path d="M10 14h46l-4.5 30H15z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M10 14 8 8H2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="54" r="4" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="44" cy="54" r="4" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
+        </span>
+        <h3 class="cart-empty__title">Seu pedido está vazio</h3>
+        <p class="cart-empty__text">
+          Escolha um hambúrguer no cardápio e ele aparece aqui. Você pode ajustar
+          quantidades e remover itens quando quiser.
+        </p>
+        <button class="btn btn--primary" type="button" id="cart-empty-cta">Ver o cardápio</button>
+      </div>
+
+      <ul class="cart-list" id="cart-list"></ul>
+    </div>
+
+    <!-- ETAPA 2: DADOS -->
+    <form class="drawer__panel" data-panel="checkout" id="checkout-form" novalidate hidden>
+      <p class="drawer__hint">
+        Preencha os dados para gerar um resumo do pedido. <strong>Nenhum pagamento
+        é processado</strong> e nada é enviado para um servidor.
+      </p>
+
+      <div class="field">
+        <label class="field__label" for="co-name">Nome completo</label>
+        <input class="field__input" type="text" id="co-name" name="name" autocomplete="name" placeholder="Seu nome" required aria-describedby="co-name-error" minlength="3">
+        <p class="field__error" id="co-name-error" hidden></p>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="co-email">E-mail</label>
+        <input class="field__input" type="email" id="co-email" name="email" autocomplete="email" placeholder="voce@email.com" required aria-describedby="co-email-error">
+        <p class="field__error" id="co-email-error" hidden></p>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="co-phone">Telefone / WhatsApp</label>
+        <input class="field__input" type="tel" id="co-phone" name="phone" autocomplete="tel" placeholder="(11) 90000-0000" required aria-describedby="co-phone-error" inputmode="numeric">
+        <p class="field__error" id="co-phone-error" hidden></p>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="co-address">Endereço de entrega</label>
+        <input class="field__input" type="text" id="co-address" name="address" autocomplete="street-address" placeholder="Rua, número e complemento" required aria-describedby="co-address-error" minlength="8">
+        <p class="field__error" id="co-address-error" hidden></p>
+      </div>
+
+      <fieldset class="field field--fieldset">
+        <legend class="field__label">Forma de recebimento</legend>
+        <div class="choice">
+          <label class="choice__item">
+            <input type="radio" name="delivery" value="entrega" checked>
+            <span class="choice__box">Entrega <small>Chega em até 40 min</small></span>
+          </label>
+          <label class="choice__item">
+            <input type="radio" name="delivery" value="retirada">
+            <span class="choice__box">Retirada no balcão <small>Pronta em 20 min</small></span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label class="field__label" for="co-notes">Observações <span class="field__optional">opcional</span></label>
+        <textarea class="field__input field__input--area" id="co-notes" name="notes" rows="3" placeholder="Ex.: sem cebola, ponto da carne, etc."></textarea>
+      </div>
+
+      <div class="drawer__panel-actions">
+        <button class="btn btn--ghost" type="button" data-back-to="cart">Voltar aos itens</button>
+        <button class="btn btn--primary" type="submit">Revisar pedido</button>
+      </div>
+    </form>
+
+    <!-- ETAPA 3: CONFIRMAÇÃO -->
+    <div class="drawer__panel" data-panel="done" hidden>
+      <div class="success">
+        <span class="success__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" focusable="false"><circle cx="32" cy="32" r="27" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 33.5 28.5 42 45 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <h3 class="success__title">Pedido registrado</h3>
+        <p class="success__text" id="success-text">
+          Este é um pedido fictício gerado apenas para demonstrar a interface.
+        </p>
+        <dl class="success__data" id="success-data"></dl>
+        <button class="btn btn--primary" type="button" id="success-close">Fechar e voltar ao cardápio</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RODAPÉ FIXO DO CARRINHO -->
+  <div class="drawer__footer" id="cart-summary">
+    <dl class="summary">
+      <div class="summary__row">
+        <dt>Subtotal</dt>
+        <dd id="cart-subtotal">R$ 0,00</dd>
+      </div>
+      <div class="summary__row" id="cart-delivery-row">
+        <dt>Entrega</dt>
+        <dd id="cart-delivery">R$ 9,90</dd>
+      </div>
+      <div class="summary__row summary__row--total">
+        <dt>Total</dt>
+        <dd id="cart-total">R$ 0,00</dd>
+      </div>
+    </dl>
+    <p class="summary__note" id="cart-freight-note">Frete grátis em pedidos acima de R$ 80,00.</p>
+    <div class="drawer__footer-actions">
+      <button class="btn btn--ghost" type="button" id="cart-clear">Limpar</button>
+      <button class="btn btn--primary btn--block" type="button" id="cart-checkout" disabled>Finalizar pedido</button>
+    </div>
+  </div>
+</aside>
+
+<!-- ============================== NOTIFICAÇÕES ============================== -->
+<div class="toast-region" id="toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
